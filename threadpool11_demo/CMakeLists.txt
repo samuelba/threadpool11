@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(threadpool11_demo)
 
+set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+
+add_subdirectory(${PROJECT_SOURCE_DIR}/../threadpool11 threadpool11)
+
 include_directories(
   ${threadpool11_INCLUDE_DIRS}
 )
